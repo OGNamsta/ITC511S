@@ -1,0 +1,51 @@
+Pseudocode for Stock
+
+stocksale() // allows sale of products or stock //
+sales = 0 
+{
+Begin
+ GET stock_num
+ GET stock_name
+ GET stock_price
+ CALCULATE change
+  change = moneyreceived - price
+  sales = sales + 1
+ PRINT receipt
+End
+}
+
+lowStockPrompt() // displays a message whenever stock is low //
+{
+Begin
+ GET stock_num
+ IF stock_num < 50
+  PRINT "Stock is low, order new stock!"
+End
+}
+
+addNewStock() // allows managers to add new stock before selling begins //
+{
+Begin
+ GET stock_name
+ GET stock_price
+ GET stock_num
+ PRINT new_stock
+  new_stock = "stock_name, stock_price, stock_num" // this line records the details of newly added stock //
+End
+}
+
+dailyStockAlert() // gives a daily report on the amount of stock left //
+{
+Begin
+ GET stock_num
+ PRINT stock_num
+End
+}
+
+projectedSales() // uses data and trends of previous sales to predict future sales //
+{
+Begin
+ GET sales
+ GET sales_trend
+PRINT projected_sales
+}
