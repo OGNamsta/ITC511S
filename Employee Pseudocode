@@ -1,0 +1,14 @@
+START
+Input = employeeID
+GET employeeProfile
+Get jobGrade
+If  ( jobGrade == A)  then 
+     Display = permanentlyEmployed
+Else if  ( employee > A )  then 
+             Display = onContract
+
+employeeSalary = jobGrade * hoursWorked ) // 
+
+Print = employeeSalary
+
+END
